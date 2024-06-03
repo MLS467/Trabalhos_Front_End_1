@@ -1,0 +1,8 @@
+@mixin centralizar($h, $v) {
+    justify-content: $h;
+    align-items: $v;
+}
+
+@mixin borda($cor) {
+    border: 2px solid $cor;
+}

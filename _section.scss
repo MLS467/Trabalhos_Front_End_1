@@ -1,0 +1,155 @@
+@import "func";
+
+#secPrinc {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    @include centralizar(space-around, center);
+    flex-direction: row;
+    background-color: black;
+    box-shadow: $divisao;
+
+    #secSec {
+        background-color: black;
+        width: 60%;
+        height: 400px;
+        color: aliceblue;
+
+        audio {
+            margin-top: 15px;
+        }
+    }
+
+
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: solid 1px orange;
+        width: 20%;
+        height: 300px;
+        margin-left: 2%;
+        color: aliceblue;
+        background-color: aliceblue;
+        background-image: url(img/fones-de-ouvido-pretos-para-ouvir-musica-dj-fone-de-ouvido-de-audio-isolado-na-vista-frontal-de-fund.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+        h2 {
+            // border: solid 1px orangered;
+            width: auto;
+            margin-right: 15px;
+            text-align: center;
+        }
+
+    }
+
+}
+
+#sec2 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    @include centralizar(center, center);
+    // border: solid 2px rgb(214, 40, 17);
+    margin-bottom: 5%;
+
+    article {
+        display: flex;
+        @include centralizar(center, center);
+        width: 45%;
+        height: 400px;
+        color: aliceblue;
+        // border: solid orange 2px;
+        margin: auto auto;
+    }
+}
+
+#divborda {
+    /* border: 1px solid deeppink; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+#divborda button {
+    margin-right: 10px;
+    background-image: url(img/left-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 10px 10px;
+    color: white;
+}
+
+#divUl {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    width: 20%;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#menulat {
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(204, 204, 204, 0.5);
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+#menulat:hover {
+    box-shadow: 0 8px 16px rgba(204, 204, 204, 0.7);
+    background-color: rgba(17, 16, 16, 0.558);
+    transition: box-shadow 0.3s ease;
+}
+
+#menulat li {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    padding: 18px 22px;
+    margin-bottom: 10%;
+    text-align: start;
+    color: white;
+    /* border: 1px dashed red; */
+}
+
+#menulat li a {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    text-decoration: none;
+
+
+}
+
+
+
+.ocultar {
+    margin-right: -160%;
+    transition: all 1s;
+}
+
+.mostrar {
+    margin-right: 0%;
+    transition: all 1s;
+}

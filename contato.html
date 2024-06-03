@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Contato</title>
+</head>
+
+<style>
+    #div1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 180px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+</style>
+
+
+<body>
+    <main id="mainContato">
+        <header>
+            <h1 id="h1" class="Divisoes">BassBlastZone</h1>
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a class="glow-on-hover" href="index.html">Início</a></li>
+                <li><a class="glow-on-hover" href="sobre.html">Sobre</a></li>
+                <li><a class="glow-on-hover" href="artistas.html">Artistas</a></li>
+                <li><a class="glow-on-hover" href="eventos.html">Eventos</a></li>
+                <li><a class="glow-on-hover" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <h2 style=" margin: 5%" class="branco">Fale conosco</h2>
+            <form style="color:white;" action="" method="post">
+                <input type="text" placeholder="Digite seu nome aqui*" required><br><br>
+
+                <input type="text" name="cpf" placeholder="Digite seu cpf*" pattern="\d*" required><br><br>
+                <input type="text" name="rg" placeholder="Digite seu RG*" pattern="\d*" required><br><br>
+
+                <input type="text" placeholder="Digite seu sobrenome aqui*" required><br><br>
+                <p>Data de Nascimento</p>
+                <input type="date"><br><br>
+
+                <p>Data do evento</p>
+                <input type="date" id="date" name="date" min="2024-01-01" max="2025-12-31"
+                    placeholder="Data do evento"><br><br>
+                <p>Horário do evento</p>
+                <input type="time" id="time" name="time" min="18:00" max="06:00"
+                    placeholder="Horário do evento"><br><br>
+
+                <input type="email" id="email" name="email" placeholder="Seu e-mail*" required><br><br>
+
+                <input list="cidade" name="cidade" placeholder="Escolha a cidade"><br><br>
+
+                <input type="text" id="latitude">
+                <button id="btn">Cordenadas</button><br><br>
+                <input type="text" id="longitude"><br><br>
+
+                <input type="number" id="number" name="number" min="1" placeholder="Número de convidados"><br><br>
+                <p>Volume desejado</p>
+                1 <input type="range" id="range" name="range" min="1" max="10" placeholder="Volume desejado">10<br><br>
+
+                <input type="url" id="url" name="url" placeholder="Link do seu perfil no SoundCloud"><br><br>
+
+                <p>Escolha sua cor favorita:</p>
+                <input type="color" id="color" name="color" placeholder="Cor favorita"><br><br>
+
+                <textarea name="textarea" id="textarea" cols="30" rows="10"
+                    placeholder="Digite sua mensagem aqui"></textarea><br><br>
+
+                <input id="botao" type="submit" value="Enviar">
+
+                <datalist id="cidade">
+                    <option value="Pelotas"></option>
+                    <option value="Jaguarão"></option>
+                    <option value="Porto_Alegre"></option>
+                    <option value="Canguçu"></option>
+                    <option value="Santa_Maria"></option>
+                </datalist><br><br><br>
+
+                <p>Não sou um robô</p>
+                <div id="div1" ondrop="soltar(event)" ondragover="permiteSoltar(event)" name="robo" value="nao"></div>
+                <br>
+                <img id="img1" src="img/IFSulPadro.png" draggable="true" ondragstart="arrastar(event)" width="180"
+                    height="170">
+
+            </form>
+        </section>
+
+
+
+
+        <footer>
+            <h2 class="Divisoes">Footer</h2>
+        </footer>
+    </main>
+
+    <script src="geolocalizacao.js"></script>
+    <script src="titulo.js"></script>
+</body>
+
+</html>
